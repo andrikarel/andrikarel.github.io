@@ -11,7 +11,7 @@ body {
 hr {
   max-width: 50px;
   border-width: 3px;
-  border-color: #F05F40;
+  border-color: rgb(26, 154, 171);
 }
 
 hr.light {
@@ -19,14 +19,14 @@ hr.light {
 }
 
 a {
-  color: #F05F40;
+  color: rgb(26, 154, 171);
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
 }
 
 a:hover {
-  color: #f05f40;
+  color: black;
 }
 
 h1,
@@ -49,6 +49,7 @@ h6 {
 .text-faded {
   color: rgba(255, 255, 255, 0.7);
 }
+
 
 section {
   padding: 8rem 0;
@@ -105,17 +106,17 @@ img::-moz-selection {
   font-size: .9rem;
   font-weight: 700;
   text-transform: uppercase;
-  color: #212529;
+  color: rgb(26, 154, 171);
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link:hover,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-  color: #F05F40;
+  color: rgb(26, 154, 171);
 }
 
 #mainNav .navbar-nav > li.nav-item > a.nav-link.active,
 #mainNav .navbar-nav > li.nav-item > a.nav-link:focus.active {
-  color: #F05F40 !important;
+  color: rgb(26, 154, 171) !important;
   background-color: transparent;
 }
 
@@ -151,10 +152,10 @@ img::-moz-selection {
     background-color: #fff;
   }
   #mainNav.navbar-shrink .navbar-brand {
-    color: #F05F40;
+    color: rgb(26, 154, 171);
   }
   #mainNav.navbar-shrink .navbar-brand:focus, #mainNav.navbar-shrink .navbar-brand:hover {
-    color: #f05f40;
+    color: rgb(26, 154, 171);
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link,
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus {
@@ -162,20 +163,30 @@ img::-moz-selection {
   }
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:hover,
   #mainNav.navbar-shrink .navbar-nav > li.nav-item > a.nav-link:focus:hover {
-    color: #F05F40;
+    color: rgb(26, 154, 171);
   }
 }
 
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 56px);
-  background-image: url("../img/header.jpg");
+  background: url("../img/header.jpg");
   background-position: center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+
 }
+header.masthead > .masthead-image{
+  background-color: rgba(0,0,0,0.5);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 
 header.masthead hr {
   margin-top: 30px;
@@ -214,6 +225,11 @@ header.masthead p {
     font-size: 4rem;
   }
 }
+#page-top > header > div > div > div.col-lg-10.mx-auto > h1{
+  color: rgb(255, 255, 255);
+  
+  
+}
 
 .service-box {
   max-width: 400px;
@@ -235,7 +251,7 @@ header.masthead p {
   text-align: center;
   opacity: 0;
   color: #fff;
-  background: rgba(240, 95, 64, 0.9);
+  background: rgb(26, 154, 171);
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
   transition: all 0.2s;
@@ -283,34 +299,55 @@ header.masthead p {
 }
 
 .text-primary {
-  color: #F05F40 !important;
+  color: rgb(26, 154, 171) !important;
 }
 
-.btn {
-  font-weight: 700;
-  text-transform: uppercase;
-  border: none;
-  border-radius: 300px;
-  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
+.btn-primary {
+  background:rgb(26, 154, 171);
+  color:#fff;
+  border:none;
+  position:relative;
+  height:60px;
+  font-size:1.6em;
+  padding:0 2em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  font-family: 'Open Sans'
 }
 
 .btn-xl {
   padding: 1rem 2rem;
 }
 
-.btn-primary {
-  background-color: #F05F40;
-  border-color: #F05F40;
-}
+
 
 .btn-primary:hover, .btn-primary:focus, .btn-primary:active {
-  color: #fff;
-  background-color: #ee4b28 !important;
+  background:#fff;
+  color:rgb(26, 154, 171);
+}
+.btn-primary:before,.btn-primary:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: rgb(26, 154, 171);
+  transition:400ms ease all;
+}
+.btn-primary:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:0;
+}
+.btn-primary:hover:before,.btn-primary:hover:after{
+  width:100%;
+  transition:800ms ease all;
 }
 
 .btn-primary:active, .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
 }
-.my-title{
-  color:gray;
-}
+
