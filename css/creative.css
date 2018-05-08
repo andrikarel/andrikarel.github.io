@@ -39,7 +39,7 @@ h6 {
 }
 
 .bg-primary {
-  background-color: #F05F40 !important;
+  background-color: rgb(64, 175, 240) !important;
 }
 
 .bg-dark {
@@ -182,6 +182,7 @@ header.masthead hr {
   margin-bottom: 30px;
 }
 
+
 header.masthead h1 {
   font-size: 2rem;
 }
@@ -309,4 +310,7 @@ header.masthead p {
 
 .btn-primary:active, .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgba(240, 95, 64, 0.5) !important;
+}
+.my-title{
+  color:gray;
 }
