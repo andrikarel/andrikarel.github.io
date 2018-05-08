@@ -395,4 +395,8 @@ header.masthead p {
 .btn-primary:active, .btn-primary:focus {
   box-shadow: 0 0 0 0.2rem rgb(26, 154, 171) !important;
 }
+.soundcloud{
+  width: 150px;
+  height: 150px;
+}
 
